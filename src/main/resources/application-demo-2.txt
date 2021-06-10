@@ -18,3 +18,13 @@ zuul:
     items:
       service-id: service-items
       path: /api/items/**
+
+    users:
+      service-id: service-users
+      path: /api/**
+    
+    security:
+      service-id: service-oauth
+      #service-oauth
+      path: /api/security/**
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization 
